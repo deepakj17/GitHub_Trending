@@ -18,4 +18,8 @@ public class FunctionalIT {
     return Karate.run("quotes").relativeTo(getClass());
   }
 
+  @Karate.Test
+  Karate testGitHub() {
+    return Karate.run("github").relativeTo(getClass());
+  }
 }
